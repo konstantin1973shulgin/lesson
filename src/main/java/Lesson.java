@@ -8,9 +8,10 @@ public class Lesson {
         double doubleVal=562.672;
         char charVal='\u0000';
         boolean boolenVal=true;
+
         System.out.println(Lesson.calculate(1F,2F,3F,0.5F));
         System.out.println(Lesson.checkIntValues(10,5));
-        Lesson.printPosNeg(-42);
+        Lesson.printPosNeg(-43);
     }
 
     static double calculate(float a,float b,float c,float d){
