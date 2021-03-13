@@ -1,3 +1,5 @@
+package lesson;
+
 public class Lesson {
     public static void main(String[] args) {
         byte byteVal=100;
@@ -12,6 +14,8 @@ public class Lesson {
         System.out.println(Lesson.calculate(1F,2F,3F,0.5F));
         System.out.println(Lesson.checkIntValues(10,5));
         Lesson.printPosNeg(-43);
+        System.out.println(Lesson.isNegative(50));
+        Lesson.printName("Konstantin");
     }
 
     static double calculate(float a,float b,float c,float d){
@@ -29,5 +33,13 @@ public class Lesson {
         } else{
             System.out.println("Положительное");
         }
+    }
+
+    static boolean isNegative(int val){
+        return val<0;
+    }
+
+    static void printName(String name){
+        System.out.println("Привет, "+name);
     }
 }
